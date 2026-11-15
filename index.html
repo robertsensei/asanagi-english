@@ -90,6 +90,12 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .page p{margin:6px 0 0;font-size:14.5px;color:var(--muted)}
 @media (max-width:760px){.pages{grid-template-columns:1fr}.page img{max-width:360px}}
 
+/* sample download */
+.dl{margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px;background:#fff;border:2px solid var(--line);border-radius:20px;padding:24px 28px}
+.dl h3{font-size:20px}
+.dl p{margin:6px 0 0;color:var(--muted);font-size:14.5px}
+.dl-btns{display:flex;flex-wrap:wrap;gap:10px}
+.book .buy a{font-weight:700}
 /* cast */
 .cast{display:flex;flex-wrap:wrap;gap:18px;margin-top:28px}
 .cast figure{margin:0;text-align:center;width:96px}
@@ -173,7 +179,7 @@ footer a{color:#d8d5cd}
               <li>ペアカードを使ったインフォメーション・ギャップ</li>
               <li>確認テスト5回・くわしい解答</li>
             </ul>
-            <div class="buy"><span class="soon">2027年春 発売予定</span></div>
+            <div class="buy"><span class="soon">2027年春 発売予定</span><a href="samples/Orange1nen_sample.pdf" download>見本PDF ↓</a></div>
           </div>
         </article>
         <article class="book">
@@ -187,7 +193,7 @@ footer a{color:#d8d5cd}
               <li>オーストラリアからの転校生レオと、子ねこのモチが登場</li>
               <li>スピーキング3回・確認テスト5回・単語リスト</li>
             </ul>
-            <div class="buy"><span class="soon">2027年春 発売予定</span></div>
+            <div class="buy"><span class="soon">2027年春 発売予定</span><a href="samples/Orange2nen_sample.pdf" download>見本PDF ↓</a></div>
           </div>
         </article>
       </div>
@@ -216,12 +222,22 @@ footer a{color:#d8d5cd}
           <p>友だちにインタビューして、最後は自分のことを英語で書きます。</p>
         </div>
       </div>
+      <div class="dl">
+        <div>
+          <h3>見本ページを無料でダウンロード</h3>
+          <p>もくじとUnit 1（3ページ）を、印刷してそのまま授業で使えます。</p>
+        </div>
+        <div class="dl-btns">
+          <a class="btn solid" href="samples/Orange1nen_sample.pdf" download>Orange 1年 見本（PDF）</a>
+          <a class="btn solid" href="samples/Orange2nen_sample.pdf" download>Orange 2年 見本（PDF）</a>
+        </div>
+      </div>
       <p class="eyebrow" style="margin-top:56px">The characters</p>
       <h2 style="font-size:22px">いっしょに1年を過ごす仲間たち</h2>
       <div class="cast">
         <figure><img src="img/b-ken.png" alt=""><figcaption>Ken<span>サッカー好き</span></figcaption></figure>
         <figure><img src="img/b-yui3.png" alt=""><figcaption>Yui<span>読書と動物</span></figcaption></figure>
-        <figure><img src="img/b-sora2.png" alt=""><figcaption>Sora<span>ギター担当</span></figcaption></figure>
+        <figure><img src="img/b-sora2.png" alt=""><figcaption>Sora<span>将棋が大好き</span></figcaption></figure>
         <figure><img src="img/b-aya.png" alt=""><figcaption>Aya<span>ダンス部</span></figcaption></figure>
         <figure><img src="img/b-mai.png" alt=""><figcaption>Mai<span>ダンス部</span></figcaption></figure>
         <figure><img src="img/b-leo.png" alt=""><figcaption>Leo<span>2年の転校生</span></figcaption></figure>
