@@ -43,7 +43,12 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 .nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:14px;font-weight:500}
 .nav ul a{color:var(--ink);text-decoration:none}
 .nav ul a:hover,.nav ul a:focus-visible{color:var(--teal);text-decoration:underline}
+.nav-cta{margin-left:auto;font-size:14px;font-weight:700;color:#fff;background:var(--teal);border-radius:999px;padding:7px 16px;text-decoration:none;white-space:nowrap}
+.nav-cta:hover{background:var(--teal-dark)}
+.nav ul + .nav-cta{margin-left:0}
+.logo b{white-space:nowrap}
 @media (max-width:760px){.nav ul{display:none}}
+@media (max-width:480px){.logo span{display:none}.nav-cta{font-size:13px;padding:7px 14px}}
 
 /* hero */
 .hero{background:var(--cream);padding-block:56px 40px}
@@ -123,13 +128,14 @@ footer a{color:#d8d5cd}
 <body>
 <header lang="ja">
   <div class="wrap nav">
-    <a class="logo" href="#top"><b>Asanagi English</b><span>朝凪イングリッシュ</span></a>
+    <a class="logo" href="./"><b>Asanagi English</b><span>朝凪イングリッシュ</span></a>
     <ul>
       <li><a href="#books">Orange シリーズ</a></li>
       <li><a href="#inside">中身を見る</a></li>
       <li><a href="#schools">学校・塾の方へ</a></li>
       <li><a href="#about">About</a></li>
     </ul>
+    <a class="nav-cta" href="contact.html">お問い合わせ</a>
   </div>
 </header>
 
@@ -231,7 +237,7 @@ footer a{color:#d8d5cd}
         <p class="eyebrow">For schools &amp; juku</p>
         <h2>学校・塾でのクラス採用</h2>
         <p>クラス単位でのまとめ注文や、授業での使い方のご相談を受け付けています。見本ページ（Unit 1つ分）を無料でお送りします。</p>
-        <a class="btn" href="#about">お問い合わせ →</a>
+        <a class="btn" href="contact.html">お問い合わせ →</a>
       </div>
       <div class="panel free">
         <p class="eyebrow">Free for teachers</p>
@@ -249,9 +255,9 @@ footer a{color:#d8d5cd}
       <div class="about">
         <img src="img/orange-explain.png" alt="オレンジ" width="300" height="300">
         <div>
-          <h2>Robert Brown（Robert Sensei）</h2>
+          <h2>Robert Brown</h2>
           <p>大阪府の中学校・小学校で英語を教えるALT。毎日の授業で生徒が「楽しい」と感じた活動や、つまずきやすい文法のポイントをもとに、Orangeシリーズを作っています。</p>
-          <p class="small" style="color:var(--muted)">お問い合わせ：<span id="mail" style="user-select:all;color:var(--ink);font-family:var(--en)">info@asanagi-english.com</span></p>
+          <p><a class="btn ghost" href="contact.html">お問い合わせはこちら →</a></p>
         </div>
       </div>
     </div>
